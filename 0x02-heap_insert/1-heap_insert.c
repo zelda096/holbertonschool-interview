@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_size - measures the size of a binary tree
  * @tree: input binary tree
@@ -11,7 +10,6 @@ size_t binary_tree_size(const binary_tree_t *tree)
         return (0);
     return (1 + binary_tree_size(tree->left) + binary_tree_size(tree->right));
 }
-
 /**
  * convert - converts number and base into string
  * @num: input number
@@ -37,7 +35,6 @@ char *convert(unsigned long int num, int base, int lowercase)
     } while (num);
     return (ptr);
 }
-
 /**
  * insert - helper func to insert node to correct location
  * @root: double pointer to root of max heap
@@ -69,7 +66,6 @@ void insert(heap_t **root, heap_t *node)
             tmp = tmp->left;
     }
 }
-
 /**
  * heap_insert - inserts a value into a max binary heap
  * @root: double pointer to root of tree
